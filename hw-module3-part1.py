@@ -7,11 +7,7 @@ def get_days_from_today(date):
         today_date = datetime.today().date()
         diff_day = today_date - requested_day
 
-
-        print(requested_day)
-        print(today_date)
-        print("days", (round(diff_day.days)))
-        return diff_day
+        return round(diff_day.days)
 
     except ValueError:
         print("Incorrect entered format")
